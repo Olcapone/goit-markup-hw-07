@@ -58,13 +58,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* Navigation */
 
 .navigation .container {
   display: flex;
   align-items: center;
 }
-
-/* Navigation */
 
 .navigation {
   text-align: center;
@@ -73,22 +72,35 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.manu-container {
+.menu {
   display: flex;
 }
 
-.menu {
-  display: block;
+.menu_block {
+  display: flex;
+  align-items: center;
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
   transition: var(--transition-menu);
 }
-
-.menu-item {
+.menu_item {
   position: relative;
 }
+.menu_item:not(:last-child) {
+  margin-right: 50px;
+}
 
-.active-menu:after {
+.menu--base--color,
+.menu--base--color:visited {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.menu--contact--color,
+.menu--contact--color:visited {
+  color: var(--primary-text-color);
+}
+.active--menu:after {
   content: "";
   display: block;
   position: absolute;
@@ -102,53 +114,19 @@ body {
   margin-bottom: -1px;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu,
-.menu:visited {
-  color: var(--title-text-color);
-  text-decoration: none;
-}
-.tel-container {
-  display: flex;
-  margin-left: auto;
-}
-/* contacts */
-
-.tel,
-.tel:visited {
-  color: var(--primary-text-color);
-  transition: var(--transition-menu);
-}
-.tel {
-  display: flex;
-  align-items: center;
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
-}
-
-.menu:hover,
-.menu:focus,
-.tel:hover,
-.tel:focus,
-.tel:hover > svg,
-.tel:focus > svg {
+.menu_block:hover,
+.menu_block:focus,
+.menu_block:hover > svg,
+.menu_block:focus > svg {
   fill: var(--hover-text-color);
   color: var(--hover-text-color);
   outline: none;
 }
-.contact-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
+.tel {
+  display: flex;
+  margin-left: auto;
 }
-.tel-icon {
-  margin: 0;
-  width: 10px;
-  height: 16px;
+.tel_icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
