@@ -132,7 +132,7 @@ body {
 }
 
 /* LOGO */
-.web {
+.logo_web {
   color: var(--hover-text-color);
 }
 .logo,
@@ -149,6 +149,13 @@ body {
   margin-right: 93px;
 
   animation-duration: 250ms;
+}
+
+.logo_on_dark {
+  color: var(--accent-text-color);
+
+  margin: 0px;
+  padding: 0px;
 }
 
 /* HERO */
@@ -426,12 +433,6 @@ h2 {
   align-items: center;
 }
 
-.footer .logo {
-  color: var(--accent-text-color);
-
-  margin: 0px;
-  padding: 0px;
-}
 .address-block {
   padding-right: 70px;
 }
