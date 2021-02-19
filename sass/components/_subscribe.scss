@@ -1,12 +1,19 @@
 .subscribe {
   margin-left: auto;
+
+  button {
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    margin-left: 12px;
+  }
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
   margin-top: 20px;
 }
-.subscribe-input {
+.subscribe__input {
   display: block;
 
   width: 358px;
@@ -21,20 +28,7 @@
   color: var(--accent-text-color);
 }
 
-.subscribe button {
-  display: flex;
-  align-items: center;
-  padding-left: 29px;
-  margin-left: 12px;
-}
-.icon-send {
+.subscribe__icon {
   margin-left: 10px;
   fill: var(--accent-text-color);
-}
-.heading-dark-fon {
-  color: var(--accent-text-color);
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
 }
