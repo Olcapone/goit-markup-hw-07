@@ -1,0 +1,25 @@
+.logo_web {
+  color: var(--hover-text-color);
+}
+.logo,
+.logo:visited {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--title-text-color);
+  font-size: 26px;
+  line-height: 1.19;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  animation-duration: 250ms;
+}
+
+.logo_on_dark {
+  color: var(--accent-text-color);
+
+  margin: 0px;
+  padding: 0px;
+}

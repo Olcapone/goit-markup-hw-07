@@ -1,0 +1,30 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay button {
+  margin-top: 40px;
+  padding-left: var(--menu-space);
+  padding-right: var(--menu-space);
+}
+
+.main-button {
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--hover-text-color);
+  color: var(--accent-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: none;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,65 @@
+.navigation {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu_block {
+  display: flex;
+  align-items: center;
+  padding-top: var(--menu-space);
+  padding-bottom: var(--menu-space);
+  transition: var(--transition-menu);
+}
+.menu_item {
+  position: relative;
+}
+.menu_item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu--base--color,
+.menu--base--color:visited {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.menu--contact--color,
+.menu--contact--color:visited {
+  color: var(--primary-text-color);
+}
+.active--menu:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-text-color);
+  outline: var(--hover-text-color);
+  margin-bottom: -1px;
+}
+
+.menu_block:hover,
+.menu_block:focus,
+.menu_block:hover > svg,
+.menu_block:focus > svg {
+  fill: var(--hover-text-color);
+  color: var(--hover-text-color);
+  outline: none;
+}
+.tel {
+  display: flex;
+  margin-left: auto;
+}
+.tel_icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
