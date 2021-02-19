@@ -487,21 +487,52 @@ h2 {
   margin-right: 50px;
 }
 
-.menu {
+.menu-block_link {
   display: block;
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
   transition: var(--transition-menu);
 }
 
-.menu, .menu:visited {
+.menu-block_link, .menu-block_link:visited {
   color: var(--title-text-color);
   text-decoration: none;
 }
 
-.menu:hover, .menu:focus {
+.menu-block_link:hover, .menu-block_link:focus {
   color: var(--hover-text-color);
   outline: none;
+}
+
+/* contacts */
+.tel-block {
+  display: flex;
+  margin-left: auto;
+}
+
+.tel-block_link {
+  display: flex;
+  align-items: center;
+  padding-top: var(--menu-space);
+  padding-bottom: var(--menu-space);
+}
+
+.tel-block_link, .tel-block_link:visited {
+  color: var(--primary-text-color);
+  transition: var(--transition-menu);
+}
+
+.tel-block_link:hover, .tel-block_link:focus,
+.tel-block_link:hover > svg,
+.tel-block_link:focus > svg {
+  fill: var(--hover-text-color);
+  color: var(--hover-text-color);
+  outline: none;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .active-menu:after {
@@ -516,58 +547,6 @@ h2 {
   background-color: var(--hover-text-color);
   outline: var(--hover-text-color);
   margin-bottom: -1px;
-}
-
-/* contacts */
-.tel-block {
-  display: flex;
-  margin-left: auto;
-}
-
-.tel {
-  display: flex;
-  align-items: center;
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
-}
-
-.tel, .tel:visited {
-  color: var(--primary-text-color);
-  transition: var(--transition-menu);
-}
-
-.tel:hover, .tel:focus,
-.tel:hover > svg,
-.tel:focus > svg {
-  fill: var(--hover-text-color);
-  color: var(--hover-text-color);
-  outline: none;
-}
-
-.menu:hover,
-.menu:focus,
-.tel:hover,
-.tel:focus,
-.tel:hover > svg,
-.tel:focus > svg {
-  fill: var(--hover-text-color);
-  color: var(--hover-text-color);
-  outline: none;
-}
-
-.contact-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.tel-icon {
-  margin: 0;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
 }
 
 .banner {

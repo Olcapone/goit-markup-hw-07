@@ -22,7 +22,7 @@
   }
 }
 
-.menu {
+.menu-block_link {
   display: block;
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
@@ -40,27 +40,14 @@
   }
 }
 
-.active-menu:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--hover-text-color);
-  outline: var(--hover-text-color);
-  margin-bottom: -1px;
-}
-
 /* contacts */
+
 .tel-block {
   display: flex;
   margin-left: auto;
 }
 
-.tel {
+.tel-block_link {
   display: flex;
   align-items: center;
   padding-top: var(--menu-space);
@@ -82,26 +69,21 @@
   }
 }
 
-.menu:hover,
-.menu:focus,
-.tel:hover,
-.tel:focus,
-.tel:hover > svg,
-.tel:focus > svg {
-  fill: var(--hover-text-color);
-  color: var(--hover-text-color);
-  outline: none;
-}
 .contact-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.tel-icon {
-  margin: 0;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
+
+.active-menu:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-text-color);
+  outline: var(--hover-text-color);
+  margin-bottom: -1px;
 }
