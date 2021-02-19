@@ -69,6 +69,11 @@ body {
   padding-bottom: 60px;
 }
 
+.accent--color--link,
+.accent--color--link:visited {
+  color: var(--accent-text-color);
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -246,6 +251,14 @@ body {
 .icon-send {
   margin-left: 10px;
   fill: var(--accent-text-color);
+}
+
+.heading-dark-fon {
+  color: var(--accent-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -696,28 +709,13 @@ h2 {
   padding-right: 70px;
 }
 
-.address-block_item,
-.address-block_item:visited {
-  color: var(--accent-text-color);
-}
-
-.address-block_item:not(:last-child),
-.address-block_item:visited:not(:last-child) {
+.address-block_item:not(:last-child) {
   padding: 0px;
   margin-bottom: 9px;
 }
 
-.address-block_item:not(:first-child),
-.address-block_item:visited:not(:first-child) {
+.address-block_link {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.heading-dark-fon {
-  color: var(--accent-text-color);
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

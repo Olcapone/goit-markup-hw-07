@@ -22,3 +22,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.accent--color--link,
+.accent--color--link:visited {
+  color: var(--accent-text-color);
+}

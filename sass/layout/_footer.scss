@@ -22,24 +22,13 @@
   padding-right: 70px;
 }
 
-.address-block_item,
-.address-block_item:visited {
-  color: var(--accent-text-color);
-
+.address-block_item {
   &:not(:last-child) {
     padding: 0px;
     margin-bottom: 9px;
   }
-  &:not(:first-child) {
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-  }
 }
-
-.heading-dark-fon {
-  color: var(--accent-text-color);
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
+.address-block_link {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
 }
