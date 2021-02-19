@@ -136,7 +136,9 @@ body {
 
 .social-list__link:hover, .social-list__link:focus,
 .social-list__link:hover > svg,
-.social-list__link:focus > svg {
+.social-list__link:focus > svg,
+.social-list__link .social-contacts-icon:hover,
+.social-list__link .social-contacts-icon:focus {
   fill: var(--accent-text-color);
   background-color: var(--hover-text-color);
 }
@@ -146,12 +148,6 @@ body {
   height: 20px;
   fill: var(--fill-icon);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-contacts-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--accent-text-color);
 }
 
 .logo_web {
@@ -671,6 +667,10 @@ h2 {
 
 .footer .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-list__icon {
+  fill: var(--accent-text-color);
 }
 
 .address-block {

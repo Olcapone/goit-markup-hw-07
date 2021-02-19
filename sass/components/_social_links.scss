@@ -27,7 +27,9 @@
   &:hover,
   &:focus,
   &:hover > svg,
-  &:focus > svg {
+  &:focus > svg,
+  .social-list__icon:hover,
+  .social-list__icon:focus {
     fill: var(--accent-text-color);
     background-color: var(--hover-text-color);
   }
@@ -41,28 +43,19 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .social-cont-link {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 44px;
-//   height: 44px;
+// .social-contacts-icon {
+//   width: 20px;
+//   height: 20px;
+// }
 
-//   border-radius: 50%;
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 //   &:hover,
-// .social-contacts-icon:hover,
+//
 // &:focus,
 // .social-contacts-icon:focus {
 //   fill: var(--accent-text-color);
 //   background-color: var(--hover-text-color);
 // }
 // }
-.social-contacts-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--accent-text-color);
-}
 
 // .social-contacts-item:not(:last-child) {
 //   margin-right: 10px;
