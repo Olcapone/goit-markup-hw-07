@@ -1,32 +1,41 @@
 .footer {
   background: var(--footer-bgc);
-}
-.footer-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--accent-text-color);
+
+    margin: 0px;
+    padding: 0px;
+  }
+
+  address {
+    padding-top: 20px;
+  }
 }
 
 .address-block {
   padding-right: 70px;
 }
-.footer address {
-  padding-top: 20px;
-}
 
-.list-address:not(:last-child) {
-  padding: 0px;
-  margin-bottom: 9px;
-}
-
-.contacts,
-.contacts:visited {
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-}
-.address,
-.address:visited {
+.address-block_item,
+.address-block_item:visited {
   color: var(--accent-text-color);
+
+  &:not(:last-child) {
+    padding: 0px;
+    margin-bottom: 9px;
+  }
+  &:not(:first-child) {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
+
 .heading-dark-fon {
   color: var(--accent-text-color);
   line-height: 1.17;
