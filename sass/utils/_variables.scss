@@ -27,3 +27,10 @@
 .accent--color--link:visited {
   color: var(--accent-text-color);
 }
+
+.icon-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
