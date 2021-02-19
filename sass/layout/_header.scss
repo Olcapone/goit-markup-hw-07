@@ -10,28 +10,11 @@
   }
 }
 
-.menu {
+.menu-block {
   display: flex;
 }
 
-.menu_block {
-  display: flex;
-  align-items: center;
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
-  transition: var(--transition-menu);
-
-  &:hover,
-  &:focus,
-  &:hover > svg,
-  &:focus > svg {
-    fill: var(--hover-text-color);
-    color: var(--hover-text-color);
-    outline: none;
-  }
-}
-
-.menu_item {
+.menu-block_item {
   position: relative;
 
   &:not(:last-child) {
@@ -39,17 +22,25 @@
   }
 }
 
-.menu--base--color,
-.menu--base--color:visited {
-  color: var(--title-text-color);
-  text-decoration: none;
+.menu {
+  display: block;
+  padding-top: var(--menu-space);
+  padding-bottom: var(--menu-space);
+  transition: var(--transition-menu);
+
+  &,
+  &:visited {
+    color: var(--title-text-color);
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+    outline: none;
+  }
 }
 
-.menu--contact--color,
-.menu--contact--color:visited {
-  color: var(--primary-text-color);
-}
-.active--menu:after {
+.active-menu:after {
   content: "";
   display: block;
   position: absolute;
@@ -63,11 +54,54 @@
   margin-bottom: -1px;
 }
 
-.tel {
+/* contacts */
+.tel-block {
   display: flex;
   margin-left: auto;
 }
-.tel_icon {
+
+.tel {
+  display: flex;
+  align-items: center;
+  padding-top: var(--menu-space);
+  padding-bottom: var(--menu-space);
+
+  &,
+  &:visited {
+    color: var(--primary-text-color);
+    transition: var(--transition-menu);
+  }
+
+  &:hover,
+  &:focus,
+  &:hover > svg,
+  &:focus > svg {
+    fill: var(--hover-text-color);
+    color: var(--hover-text-color);
+    outline: none;
+  }
+}
+
+.menu:hover,
+.menu:focus,
+.tel:hover,
+.tel:focus,
+.tel:hover > svg,
+.tel:focus > svg {
+  fill: var(--hover-text-color);
+  color: var(--hover-text-color);
+  outline: none;
+}
+.contact-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.tel-icon {
+  margin: 0;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }

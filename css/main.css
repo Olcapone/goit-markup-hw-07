@@ -475,46 +475,36 @@ h2 {
   align-items: center;
 }
 
-.menu {
+.menu-block {
   display: flex;
 }
 
-.menu_block {
-  display: flex;
-  align-items: center;
+.menu-block_item {
+  position: relative;
+}
+
+.menu-block_item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu {
+  display: block;
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
   transition: var(--transition-menu);
 }
 
-.menu_block:hover, .menu_block:focus,
-.menu_block:hover > svg,
-.menu_block:focus > svg {
-  fill: var(--hover-text-color);
-  color: var(--hover-text-color);
-  outline: none;
-}
-
-.menu_item {
-  position: relative;
-}
-
-.menu_item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu--base--color,
-.menu--base--color:visited {
+.menu, .menu:visited {
   color: var(--title-text-color);
   text-decoration: none;
 }
 
-.menu--contact--color,
-.menu--contact--color:visited {
-  color: var(--primary-text-color);
+.menu:hover, .menu:focus {
+  color: var(--hover-text-color);
+  outline: none;
 }
 
-.active--menu:after {
+.active-menu:after {
   content: "";
   display: block;
   position: absolute;
@@ -528,12 +518,54 @@ h2 {
   margin-bottom: -1px;
 }
 
-.tel {
+/* contacts */
+.tel-block {
   display: flex;
   margin-left: auto;
 }
 
-.tel_icon {
+.tel {
+  display: flex;
+  align-items: center;
+  padding-top: var(--menu-space);
+  padding-bottom: var(--menu-space);
+}
+
+.tel, .tel:visited {
+  color: var(--primary-text-color);
+  transition: var(--transition-menu);
+}
+
+.tel:hover, .tel:focus,
+.tel:hover > svg,
+.tel:focus > svg {
+  fill: var(--hover-text-color);
+  color: var(--hover-text-color);
+  outline: none;
+}
+
+.menu:hover,
+.menu:focus,
+.tel:hover,
+.tel:focus,
+.tel:hover > svg,
+.tel:focus > svg {
+  fill: var(--hover-text-color);
+  color: var(--hover-text-color);
+  outline: none;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.tel-icon {
+  margin: 0;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
