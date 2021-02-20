@@ -1,4 +1,4 @@
-@mixin aligh ($d $a) {
+@mixin aligh($d, $a) {
   display: $d;
   align-items: $a;
 }
