@@ -15,6 +15,13 @@
   margin-right: 93px;
 
   animation-duration: 250ms;
+
+  .footer & {
+    color: var(--accent-text-color);
+
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 .logo--in--dark {

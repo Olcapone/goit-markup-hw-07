@@ -1,24 +1,8 @@
 .footer {
   background: var(--footer-bgc);
 
-  .container {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo {
-    color: var(--accent-text-color);
-
-    margin: 0px;
-    padding: 0px;
-  }
-
   address {
     padding-top: 20px;
-  }
-
-  .social-list__icon {
-    fill: var(--accent-text-color);
   }
 }
 

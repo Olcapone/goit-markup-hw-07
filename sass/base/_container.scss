@@ -3,4 +3,10 @@
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  .footer &,
+  .navigation & {
+    display: flex;
+    align-items: center;
+  }
 }
