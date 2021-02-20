@@ -116,6 +116,24 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.custom-information .main-button {
+  margin-top: 30px;
+  align-self: center;
+}
+
+.overlay .main-button {
+  margin-top: 40px;
+  padding-left: var(--menu-space);
+  padding-right: var(--menu-space);
+}
+
+.subscribe .main-button {
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+  margin-left: 12px;
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -188,21 +206,8 @@ body {
   padding: 0px;
 }
 
-.logo--in--dark {
-  color: var(--accent-text-color);
-  margin: 0px;
-  padding: 0px;
-}
-
 .subscribe {
   margin-left: auto;
-}
-
-.subscribe button {
-  display: flex;
-  align-items: center;
-  padding-left: 29px;
-  margin-left: 12px;
 }
 
 .subscribe__form {
@@ -321,11 +326,6 @@ h2 {
   font-weight: 500;
   line-height: 1.17;
   color: var(--dark-icon);
-}
-
-.custom-information button {
-  margin-top: 30px;
-  align-self: center;
 }
 
 .user-info {
@@ -525,12 +525,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.overlay button {
-  margin-top: 40px;
-  padding-left: var(--menu-space);
-  padding-right: var(--menu-space);
 }
 
 .advantages-list {
