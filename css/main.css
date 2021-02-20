@@ -539,7 +539,6 @@ h2 {
 }
 
 .advantages-list__item {
-  display: flex;
   flex-direction: column;
   max-width: 270px;
 }
