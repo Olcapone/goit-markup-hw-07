@@ -1,8 +1,7 @@
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--bgc-icon);
   color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 400, 1.19);
 }
 
 .team__list {

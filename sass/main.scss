@@ -1,11 +1,11 @@
+// utils
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./utils/visually_hidden";
+
 // base
 @import "./base/common";
 @import "./base/container";
-
-// utils
-@import "./utils/variables";
-@import "./utils/visually_hidden";
-@import "./utils/mixin";
 
 // components
 @import "./components/modal_buttom";
