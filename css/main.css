@@ -135,6 +135,14 @@ body {
   margin-left: 12px;
 }
 
+.filter .main-button {
+  min-width: 73px;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  line-height: 1.63;
+  transition: var(--transition-menu);
+}
+
 .social-list {
   display: flex;
   align-items: center;
