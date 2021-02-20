@@ -22,6 +22,6 @@ h3 {
   }
   .card__info & {
     color: var(--title-text-color);
-    @include font(18px, 400, 2);
+    @include font(18px, 700, 2);
   }
 }
