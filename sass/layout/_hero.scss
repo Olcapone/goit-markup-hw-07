@@ -14,9 +14,8 @@
   background-size: cover;
   background-position: center;
 }
-
+ 
 .overlay {
-  display: flex;
+  @include aligh(flex, center);
   flex-direction: column;
-  align-items: center;
 }

@@ -28,8 +28,7 @@
   }
 
   .subscribe & {
-    display: flex;
-    align-items: center;
+    @include aligh(flex, center);
     padding-left: 29px;
     margin-left: 12px;
   }

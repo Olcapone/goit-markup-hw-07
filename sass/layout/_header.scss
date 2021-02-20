@@ -43,8 +43,7 @@
 }
 
 .tel-block_link {
-  display: flex;
-  align-items: center;
+  @include aligh(flex, center);
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
 

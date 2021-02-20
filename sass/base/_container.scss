@@ -6,7 +6,6 @@
 
   .footer &,
   .navigation & {
-    display: flex;
-    align-items: center;
+    @include aligh(flex, center);
   }
 }

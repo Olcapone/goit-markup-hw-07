@@ -39,12 +39,6 @@ body {
   padding-right: 15px;
 }
 
-.footer .container,
-.navigation .container {
-  display: flex;
-  align-items: center;
-}
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #000000;
@@ -99,6 +93,12 @@ body {
   margin: -1px;
 }
 
+.footer .container,
+.navigation .container, .subscribe .main-button, .social-list, .social-list__link, .modal__close, .user-agree__label, .tel-block_link, .overlay, .img-examples, .img-examples__text, .team__about-person {
+  display: flex;
+  align-items: center;
+}
+
 .main-button {
   width: 200px;
   height: 50px;
@@ -128,16 +128,12 @@ body {
 }
 
 .subscribe .main-button {
-  display: flex;
-  align-items: center;
   padding-left: 29px;
   margin-left: 12px;
 }
 
 .social-list {
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .social-list__item {
@@ -149,8 +145,6 @@ body {
 }
 
 .social-list__link {
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 44px;
   width: 44px;
@@ -289,9 +283,7 @@ h2 {
 }
 
 .modal__close {
-  display: flex;
   position: absolute;
-  align-items: center;
   justify-content: center;
   right: 8px;
   top: 8px;
@@ -382,8 +374,6 @@ h2 {
 }
 
 .user-agree__label {
-  display: flex;
-  align-items: center;
   position: relative;
   margin-top: 20px;
   padding-left: 27px;
@@ -471,8 +461,6 @@ h2 {
 }
 
 .tel-block_link {
-  display: flex;
-  align-items: center;
   padding-top: var(--menu-space);
   padding-bottom: var(--menu-space);
 }
@@ -522,9 +510,7 @@ h2 {
 }
 
 .overlay {
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .advantages-list {
@@ -559,11 +545,6 @@ h2 {
   padding-bottom: var(--big-space);
 }
 
-.img-examples {
-  display: flex;
-  align-items: center;
-}
-
 .img-examples__item:not(:last-child) {
   margin-right: var(--betw-space);
 }
@@ -573,15 +554,13 @@ h2 {
 }
 
 .img-examples__text {
-  display: flex;
-  height: 70px;
-  width: 100%;
-  align-items: center;
   justify-content: center;
   position: absolute;
   bottom: 0%;
   left: 0%;
   background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 100%;
   font-weight: 700;
   color: var(--accent-text-color);
 }
@@ -610,9 +589,7 @@ h2 {
 }
 
 .team__about-person {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 30px 0px 16px;
 }
 

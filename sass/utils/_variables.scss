@@ -29,8 +29,7 @@
 }
 
 .icon-thumb {
-  display: flex;
-  align-items: center;
+ @include aligh(flex, center);
   justify-content: center;
   width: 100%;
 }

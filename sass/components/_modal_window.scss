@@ -30,9 +30,8 @@
 }
 
 .modal__close {
-  display: flex;
+ @include aligh(flex, center);
   position: absolute;
-  align-items: center;
   justify-content: center;
   right: 8px;
   top: 8px;
