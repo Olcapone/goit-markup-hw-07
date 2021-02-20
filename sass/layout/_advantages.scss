@@ -11,7 +11,7 @@
   }
   .icon-thumb {
     height: 120px;
-    background-color: var(--bgc-icon);
+    background-color: getColor("secondary-bgc");
 
     border-radius: 4px;
   }
@@ -22,6 +22,6 @@
 }
 
 .advantages p {
-  color: var(--primary-text-color);
+  color: getColor("primary");
   line-height: 1.7;
 }

@@ -11,7 +11,7 @@
 
 .examples__item {
   max-width: 370px;
-  border: 1px solid #eeeeee;
+  border: 1px solid getColor("border-examples");
 
   &:not(:nth-child(3n)) {
     margin-right: var(--betw-space);

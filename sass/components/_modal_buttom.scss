@@ -2,8 +2,9 @@
   width: 200px;
   height: 50px;
 
-  background-color: var(--hover-text-color);
-  color: var(--accent-text-color);
+  background-color: getColor("hover");
+  color: getColor("accent");
+
   @include font(16px, 500, 1.88);
   letter-spacing: 0.06em;
   cursor: pointer;

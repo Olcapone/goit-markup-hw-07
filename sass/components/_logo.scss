@@ -1,12 +1,12 @@
 .logo_web {
-  color: var(--hover-text-color);
+  color: getColor("hover");
 }
 .logo,
 .logo:visited {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   @include font(26px, 700, 1.19);
-  color: var(--title-text-color);
+  color: getColor("heading");
 
   padding-top: 24px;
   padding-bottom: 25px;
@@ -15,7 +15,7 @@
   animation-duration: 250ms;
 
   .footer & {
-    color: var(--accent-text-color);
+    color: getColor("accent");
 
     margin: 0px;
     padding: 0px;
