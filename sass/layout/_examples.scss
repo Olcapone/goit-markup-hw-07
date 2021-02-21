@@ -1,6 +1,6 @@
 .example-list-space {
   padding-top: 100px;
-  padding-bottom: var(--big-space);
+  padding-bottom: $big-space;
 }
 
 .examples {
@@ -14,10 +14,10 @@
   border: 1px solid getColor("border-examples");
 
   &:not(:nth-child(3n)) {
-    margin-right: var(--betw-space);
+    margin-right: $betw-space;
   }
 
   &:not(:nth-last-child(-n + 3)) {
-    margin-bottom: var(--betw-space);
+    margin-bottom: $betw-space;
   }
 }

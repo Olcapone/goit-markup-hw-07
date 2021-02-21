@@ -7,7 +7,7 @@
 }
 
 .img-examples__item:not(:last-child) {
-  margin-right: var(--betw-space);
+  margin-right: $betw-space;
 }
 .img-examples__thumb {
   position: relative;

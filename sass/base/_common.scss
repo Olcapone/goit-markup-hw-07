@@ -31,8 +31,8 @@ body {
   color: getColor("accent");
 }
 .space-sections {
-  padding-top: var(--big-space);
-  padding-bottom: var(--big-space);
+  padding-top: $big-space;
+  padding-bottom: $big-space;
 }
 
 .between-block {

@@ -19,8 +19,8 @@
 
 .menu-block_link {
   display: block;
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
+  padding-top: $menu-space;
+  padding-bottom: $menu-space;
   transition: var(--transition-menu);
 
   &,
@@ -44,8 +44,8 @@
 
 .tel-block_link {
   @include aligh(flex, center);
-  padding-top: var(--menu-space);
-  padding-bottom: var(--menu-space);
+  padding-top: $menu-space;
+  padding-bottom: $menu-space;
 
   &,
   &:visited {

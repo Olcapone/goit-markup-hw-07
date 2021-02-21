@@ -10,7 +10,7 @@
   border-radius: 4px;
 
   &:not(:last-child) {
-    margin-right: var(--betw-space);
+    margin-right: $betw-space;
   }
 
   &:hover {

@@ -22,8 +22,8 @@
   }
   .overlay & {
     margin-top: 40px;
-    padding-left: var(--menu-space);
-    padding-right: var(--menu-space);
+    padding-left: $menu-space;
+    padding-right: $menu-space;
   }
 
   .subscribe & {
