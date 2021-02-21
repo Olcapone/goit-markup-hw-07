@@ -5,8 +5,7 @@
   margin: 0px auto;
   padding: 200px 0px 280px 0px;
   background: getColor("footer-bgc");
-  background-image: linear-gradient(getColor("gradient"), getColor("gradient")),
-    url("../images/hero.jpg");
+  background-image: var(--primary-gradient), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
