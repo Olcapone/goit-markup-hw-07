@@ -2,6 +2,7 @@ h1 {
   color: getColor("accent");
   @include font(44px, 900, 1.36);
   letter-spacing: 0.06em;
+  text-align: center;
 }
 h2 {
   @include font(36px, 700, 1.17);
